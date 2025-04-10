@@ -10,4 +10,5 @@ module.exports = merge(commonConfig, {
         open: true,
     },
     plugins: [new ESLintPlugin()],
+    devtool: 'inline-source-map',
 });
