@@ -14,4 +14,12 @@ module.exports = {
             template: path.resolve(__dirname, 'public/index.html'),
         }),
     ],
+    module: {
+        rules: [
+            {
+                test: /\.css$/i,
+                use: ['style-loader', 'css-loader'],
+            },
+        ],
+    },
 };
