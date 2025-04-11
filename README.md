@@ -23,13 +23,14 @@
 Отвел от main ветку feature/install-html-css-sass-plugins.
 
 Установил и подключил:
-HTMLWebpackPlugin - https://webpack.js.org/plugins/html-webpack-plugin/
-css-loader - https://webpack.js.org/loaders/css-loader/
-style-loader - https://webpack.js.org/loaders/style-loader/
-MiniCssExtractPlugin - https://webpack.js.org/plugins/mini-css-extract-plugin/
-sass-loader - https://webpack.js.org/loaders/sass-loader/#root
-postcss-loader - https://webpack.js.org/loaders/postcss-loader/#root
-postcss-preset-env - https://www.npmjs.com/package/postcss-preset-env
+
+ - HTMLWebpackPlugin - https://webpack.js.org/plugins/html-webpack-plugin/
+ - css-loader - https://webpack.js.org/loaders/css-loader/
+ - style-loader - https://webpack.js.org/loaders/style-loader/
+ - MiniCssExtractPlugin - https://webpack.js.org/plugins/mini-css-extract-plugin/
+ - sass-loader - https://webpack.js.org/loaders/sass-loader/#root
+ - postcss-loader - https://webpack.js.org/loaders/postcss-loader/#root
+ - postcss-preset-env - https://www.npmjs.com/package/postcss-preset-env
 
 Отправил ветку на удаленный репозиторий (Create pull request -> Merge pull request -> Rebase and merge).
 В дальнейшем все отведенные от main ветки отправляю на удаленный репозиторий данным образом.
@@ -39,9 +40,10 @@ postcss-preset-env - https://www.npmjs.com/package/postcss-preset-env
 Отвел от main ветку feature/display-static.
 
 Подключил:
-шрифты - https://webpack.js.org/guides/asset-management/#loading-fonts
-картинки - https://webpack.js.org/guides/asset-management/#loading-images
-аудио - https://stackoverflow.com/questions/38252453/serving-mp3-files-using-the-webpack-file-loader
+
+ - шрифты - https://webpack.js.org/guides/asset-management/#loading-fonts
+ - картинки - https://webpack.js.org/guides/asset-management/#loading-images
+ - аудио - https://stackoverflow.com/questions/38252453/serving-mp3-files-using-the-webpack-file-loader
 
 # 3. Разделить функционал webpack на два конфига — development и production. Настроить webpack-dev-server.
 
