@@ -1,0 +1,116 @@
+@font-face {
+    font-family: 'Roboto';
+    src: url('./fonts/Roboto-Regular.ttf') format('truetype');
+}
+
+// Default styles
+
+body {
+    margin: 0;
+
+    font-family: 'Roboto', sans-serif;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+// Intro
+
+.intro {
+    width: 100%;
+    height: 100vh;
+
+    background-size: cover;
+
+    text-align: center;
+
+    &.summer {
+        background-image: url('./assets/summer-bg.jpg');
+    }
+
+    &.rain {
+        background-image: url('./assets/rainy-bg.jpg');
+    }
+
+    &.winter {
+        background-image: url('./assets/winter-bg.jpg');
+    }
+}
+
+.intro__title {
+    margin: 0 0 25px;
+
+    font-weight: 900;
+    font-size: 50px;
+    color: orange;
+    line-height: 1.5;
+}
+
+.intro__buttons {
+    margin-bottom: 25px;
+}
+
+// Button
+
+.button {
+    display: inline-block;
+    vertical-align: top;
+    width: 200px;
+    height: 200px;
+    margin: 0 10px;
+    position: relative;
+
+    background-size: cover;
+    border: 2px solid white;
+    border-radius: 20px;
+    color: transparent;
+    cursor: pointer;
+
+    font-size: 0;
+
+    &.pause {
+        &::before {
+            background-image: url('./assets/icons/pause.svg');
+        }
+    }
+
+    &--summer {
+        background-image: url('./assets/summer-bg.jpg');
+
+        &::before {
+            background-image: url('./assets/icons/sun.svg');
+        }
+    }
+
+    &--rain {
+        background-image: url('./assets/rainy-bg.jpg');
+
+        &::before {
+            background-image: url('./assets/icons/cloud-rain.svg');
+        }
+    }
+
+    &--winter {
+        background-image: url('./assets/winter-bg.jpg');
+
+        &::before {
+            background-image: url('./assets/icons/cloud-snow.svg');
+        }
+    }
+
+    &::before {
+        display: block;
+        content: "";
+        width: 50px;
+        height: 50px;
+        background-size: cover;
+
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        z-index: 1;
+
+        transform: translate3d(-50%, -50%, 0);
+    }
+}
