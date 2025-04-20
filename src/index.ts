@@ -81,13 +81,13 @@ volumeControl.addEventListener('change', function (e: Event) {
     });
 });
 
-function removeAllIntroClasses(): void {
+function removeAllIntroClasses() {
     intro.classList.remove('summer');
     intro.classList.remove('rain');
     intro.classList.remove('winter');
 }
 
-function pauseAllAudios(): void {
+function pauseAllAudios() {
     soundsGroup.rainSound.pause();
     soundsGroup.summerSound.pause();
     soundsGroup.winterSound.pause();
